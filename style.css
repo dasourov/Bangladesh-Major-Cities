@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(6, 61, 6);
+  font-family: "Chakra Petch", sans-serif;
+}
+
+#mapdiv a {
+  fill: gray;
+}
+
+#mapdiv a:hover {
+  fill: rgb(228, 11, 11);
+}
+#main {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+
+  margin-top: 150px;
+}
+
+#info_section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#info_section h1 {
+  font-size: 4.5em;
+  font-weight: bold;
+  color: white;
+}
+#info_section h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: white;
+}
+
+#info_section p {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+#btn button {
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+#btn button a {
+  text-decoration: none;
+  color: black;
+}
+
+#btn button:hover {
+  background-color: rgb(228, 11, 11);
+  transition: 0.2s ease-in-out;
+  transition-duration: 0.4s;
+  color: white;
+}
+
+footer {
+  color: white;
+  margin-left: 120px;
+}
+/* Responsive design */
+
+/* Smaller Screen */
+@media (max-width: 768px) {
+  #main {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  #info_section h2 {
+    font-size: 2em;
+  }
+
+  #info_section p {
+    font-size: 1.2em;
+  }
+
+  #btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  #btn button {
+    font-size: 1rem;
+    width: 120px;
+    padding: 10px;
+  }
+
+  footer {
+    margin-left: 90px;
+  }
+}
+/* Larger screen */
+
+@media (min-width: 1024px) {
+  #main {
+    margin-top: 200px;
+  }
+
+  #info_section h2 {
+    font-size: 3em;
+  }
+
+  #info_section p {
+    font-size: 1.7em;
+  }
+
+  #btn button {
+    font-size: 1.2rem;
+  }
+}
